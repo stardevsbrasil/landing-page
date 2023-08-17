@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+*::selection {
+    color: white;
+    background-color: #4169E1;
+}
+
+body {
+    background: url('./img/background.png') center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding: 2rem;
+}
+
+.logo-header {
+    width: 3rem;
+}
+
+.logo-header::selection {
+    background: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 12rem);
+}
+
+main > span {
+    color: white;
+    padding: .5rem 2rem;
+    border: 1px solid #F1F4FD;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    opacity: .7;
+    cursor: pointer;
+    transition: .2s;
+}
+
+main > span::selection {
+    background: none;
+}
+
+main > span:hover {
+    opacity: 1;
+}
+
+main > h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+main > h1 > span {
+    color: #4169E1;
+}
+
+main > p {
+    color: white;
+    font-size: 1.2rem;
+    width: 40%;
+    text-align: center;
+}
+
+main > button {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    background-color: #7097EA;
+    transition: .3s;
+}
+
+main > button:hover {
+    background-color: #4169E1;
+}
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    opacity: .2;
+}
+
+footer > p::selection {
+    background: none;
+}
+
+@media ( max-width: 760px ) {
+    main {
+        width: 100%;
+    }
+
+    main > h1 {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    main > h1 > br {
+        display: none;
+    }
+
+    main > p {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    main > span {
+        display: none;
+    }
+}
+
+@media ( max-width: 380px ) {
+    main {
+        width: 100%;
+    }
+
+    main > h1 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    main > h1 > br {
+        display: none;
+    }
+
+    main > p {
+        width: 100%;
+        font-size: .8rem;
+    }
+}
