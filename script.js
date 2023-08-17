@@ -1,5 +1,3 @@
-const buttonForm = document.getElementById("form");
-
 function abrirFormulario() {
     window.open("https://forms.gle/Lygktn9FkMvs6i6h8", "_blank")
 }
