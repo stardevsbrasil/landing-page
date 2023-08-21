@@ -13,7 +13,7 @@
 }
 
 body {
-    background: #1D224E url('./img/background.png') center center fixed;
+    background: #1D224E url('./img/background.webp') center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
